@@ -6,10 +6,10 @@
       <div class="signup-title">Create a new account</div>
       <div class="signup-subtitle">Connect✦Shoot✦Shine</div>
       <div class="form-row">
-        <input v-model="form.username" type="text" name="Username" placeholder="Username" class="text-color">
+        <input v-model="form.username" type="text" name="Username" placeholder="Username">
       </div>
       <div class="form-row inputs-inline">
-        <input v-model="form.email" type="email" name="email" placeholder="Email address" class="text-color">
+        <input v-model="form.email" type="email" name="email" placeholder="Email address">
       </div>
       <div class="form-row inputs-inline">
         <div class="input-wrapper">
@@ -19,7 +19,6 @@
             name="password"
             placeholder="New password"
             ref="passwordInput"
-            class="text-color"
           >
           <span
             class="toggle-password"
@@ -233,10 +232,6 @@ body {
 .form-row > input,
 .form-row > .input-wrapper {
   flex: 1;
-}
-
-.text-color {
-  color: black;
 }
 
 /* Inputs */
