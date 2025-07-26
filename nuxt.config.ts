@@ -4,8 +4,10 @@ export default defineNuxtConfig({
   devtools: {
     enabled: false
    },
+  ssr: true,
   spaLoadingTemplate: false,
   app: {
+    // cdnURL: 'web.panana.app',
     head: {
       meta: [
         {
@@ -14,7 +16,5 @@ export default defineNuxtConfig({
         }
       ]
     }
-  },
-  modules: ['@nuxt/ui-pro'],
-  css: ['../assets/css/main.css']
+  }
 })
